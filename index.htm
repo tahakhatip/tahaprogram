@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tahakhatip</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- link file css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    @keyframes bounce {
+        0%,
+        100% {
+            transform: translateY(-25%);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+
+        50% {
+            transform: translateY(0);
+            animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+
+    .animate-bounce {
+        animation: bounce 2s infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink-caret {
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: black;
+        }
+    }
+
+    .animate-typing {
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: .15em solid black;
+        width: 100%;
+        animation: typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+
+    .glass-effect {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
+</style>
+<style>
+    
+
+    .about-img img {
+        animation: fallDown 2s ease-out forwards;
+    }
+
+    @keyframes fallDown {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+<body>
+    <header>
+        <nav class="contanier">
+            <img style="width: 40px; height: 40pxx; border-radius: 20px;" class="logo" src="img/WhatsApp Image 2024-06-08 at 2.33.55 PM.jpeg" alt="">
+            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <!-- start home sec -->
+    <div class="hero" id="home">
+        <div class="contanier">
+            <div class="content">
+                <h4>مرحباً، أنا</h4>
+                <h1  class="text-4xl text-white mt-4 font-bold animate-typing">taha <span style="color: #ffaa17;">Developer</span></h1>
+                <p class="text-4xl text-white mt-4 font-bold animate-typing">Divelepor<span style="color: #ffaa17;">Full-Stack</span></p>
+                <a href="#" class="btn">تحميل السيرة الذاتية</a>
+            </div>
+
+            <div class="hero-img">
+                <img class="animate-bounce" style="border-radius: 200px;" src="img/WhatsApp Image 2024-06-08 at 2.33.55 PM.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- start about sec -->
+
+    <section id="about" class="about">
+        <div class="contanier">
+            <div class="about-img">
+                <img src="img/WhatsApp Image 2024-06-08 at 2.33.55 PM.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h1>About<span> Me</span></h1>
+                <h3 class="animate__animated animate__fadeIn">Full-Stack   Developer</h3>
+                <p>أنا مطور Full-Stack ذو خبرة في بناء تطبيقات ويب قوية ومبتكرة.
+                    
+                    أجيد التعامل مع كل من الواجهات الأمامية والخلفية، بما في ذلك JavaScript، Node.js، Express، MongoDB، و React. أسعى لتحويل الأفكار إلى حلول فعالة، مع التركيز على الأداء والأمان وتجربة المستخدم. أقدم خدمات تطوير شاملة، من التصميم إلى التنفيذ، لضمان تحقيق أهدافك الرقمية بفعالية وكفاءة.
+
+
+
+
+
+
+                </p>
+                <div class="btns">
+                    <a href="#" class="btn">تحميل السيرة الذاتية</a>
+                    <a href="#" class="btn">تواصل معي</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start Services -->
+
+    <section id="services" class="services">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>my<span>servis</span></h1>
+            </div>
+
+            <div class="boxs">
+
+                <div class="box">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h3>تصميم الويب</h3>
+                    <p>توفير تجربة مستخدم ممتازة من خلال تخطيط واجهات بصرية 
+                        مريحة، وتطوير هيكلية تفاعلية، وضمان الأداء السريع والموثوق. يعتمد على التنسيق بين الألوان والخطوط والصور لإنشاء تصاميم تعبر عن هوية العلامة التجارية وتعزز
+                         التفاعل مع المحتوى. من خلال فهم سلوك المستخدم واحتياجاته</p>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>أداء سريع</h3>
+                   <p>تقديم خدمات ويب سريعة وفعالة يعتمد على الأداء الأمثل للخوادم والتصميم المتجاوب وتجربة المستخدم الممتازة لضمان رضا العملاء وزيادة التفاعل.
+
+
+
+
+
+
+                   </p>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>كود نظيف</h3>
+                    <p>كود نظيف يعني كتابة تعليمات برمجية واضحة، مقروءة، وصيانتها سهلة. يساعد في تقليل الأخطاء وتسهيل الفهم والتطوير المستقبلي.
+
+
+
+
+
+
+                    </p>
+                    <a href="#" class="btn">اقرأ المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start Portfolio -->
+
+    <section id="Portfolio" class="portfolio">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>my <span>progict</span></h1>
+            </div>
+
+            <div class="boxs">
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>صفحة هبوط</span>
+                    </div>
+                    <img src="img/project1.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>صفحة هبوط</span>
+                    </div>
+                    <img src="img/project2.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>صفحة هبوط</span>
+                    </div>
+                    <img src="img/project3.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>صفحة هبوط</span>
+                    </div>
+                    <img src="img/project4.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>صفحة هبوط</span>
+                    </div>
+                    <img src="img/project5.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>صفحة هبوط</span>
+                    </div>
+                    <img src="img/project6.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start Contact -->
+
+    <section id="Contact" class="contact">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>contact<span> me</span></h1>
+            </div>
+
+            <form action="">
+                <input type="text" placeholder="الاسم الأول">
+                <input type="text" placeholder="الاسم الأخير">
+                <input type="number" placeholder="رقم الهاتف">
+                <input type="email" placeholder="البريد الإلكتروني">
+                <textarea name="" id="" cols="30" rows="10" placeholder="رسالتك"></textarea>
+                <button class="btn">إرسال الرسالة</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="w-full px-4 sm:px-20 py-10">
+           
+        <div style="display: flex; justify-content: center;" class="social-icons flex mt-10">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="h-8 w-8 animate-bounce">
+            </a>
+            <a href="https://jo.linkedin.com/in/%D8%B7%D9%87-%D8%A7%D9%84%D8%AE%D8%B7%D9%8A%D8%A8-b96050288?trk=profile-badge" target="_blank">
+                <img src="./emag/linkedin_icon_127334.ico" alt="linkedin" class="h-8 w-8 animate-bounce">
+            </a>
+            <a href="https://github.com/tahakhatip" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="h-8 w-8 animate-bounce">
+            </a>
+            <a href="https://www.instagram.com/khatiptaha/?hl=ar" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="h-8 w-8 animate-bounce">
+            </a>
+           
+          </a>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  
+</body>
+</html>
